@@ -90,7 +90,6 @@ export default {
         }
 
         ul{
-            list-style-type: none;
             @include flex();
             
             a{
