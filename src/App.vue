@@ -1,9 +1,9 @@
-<script setup>
+<script>
 import HeaderApp from './components/HeaderApp.vue';
 import MainApp from './components/MainApp.vue';
 import FooterApp from './components/FooterApp.vue';
 
-export default {
+export default{
     name: 'App',
     components:{
       HeaderApp,
@@ -14,9 +14,11 @@ export default {
 </script>
 
 <template>
-  
+  <HeaderApp />
+  <MainApp />
+  <FooterApp />
 </template>
 
 <style>
-
+  @import './style/general.scss';
 </style>
