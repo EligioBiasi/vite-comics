@@ -176,7 +176,7 @@ export default {
             }
 
             div.list-contanier{
-                padding: 0 1rem;
+                padding-right:1rem;
             }
         }
     }
