@@ -39,7 +39,24 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="list-contanier">
+                <div>
+                    <h3>
+                        sites
+                    </h3>
+
+                    <ul>
+                        <li v-for="link in SitesLinks">
+                            <a href="">{{ link.text }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
+        <img src="../assets/img/dc-logo-bg.png" alt="dc-logo-big">
+
     </main>
 </template>
 
@@ -120,25 +137,19 @@ export default {
 
             SitesLinks:[
                 {
-                    text: 'characters',
+                    text: 'DC',
                 },
                 {
-                    text: 'comics',
+                    text: 'MAD Magazine',
                 },
                 {
-                    text: 'movies',
+                    text: 'DC Kids',
                 },
                 {
-                    text: 'TV',
+                    text: 'DC Universe',
                 },
                 {
-                    text: 'Games',
-                },
-                {
-                    text: 'Videos',
-                },
-                {
-                    text: 'News',
+                    text: 'DC Power Visa',
                 },
             ],
         }
@@ -146,12 +157,14 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @use '../style/partials/variables' as *;
     @use '../style/partials/mixins' as *;
 
     main{
         background-image:url('../assets/img/footer-bg.jpg') ;
+        position: relative;
+        z-index: -1;
 
         section{
             @include container;
@@ -184,4 +197,10 @@ export default {
         }
     }
 
+    img{
+        position: absolute;
+        right: 15%;
+        top:-20%;
+        width: 35%;
+    }
 </style>
