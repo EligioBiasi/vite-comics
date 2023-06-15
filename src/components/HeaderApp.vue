@@ -1,6 +1,6 @@
 <template >
     <header>
-        <div class="container">
+        <div class="white-background">
             <nav>
                 <div>
                     <img src="../assets/img/dc-logo.png" alt="DC comics logo">
@@ -13,6 +13,13 @@
                     </ul>
                 </div>
             </nav>
+        </div>
+        <div>
+            <div class="banner">
+                <h1>
+                -- Content goes here --
+                </h1>
+            </div>
         </div>
     </header>
 </template>
@@ -75,7 +82,7 @@ export default {
             padding: 1rem;
         }
 
-        div.container{
+        div.white-background{
             background-color: white;
             img{
                 width: 80px;
@@ -96,13 +103,20 @@ export default {
             li{
                 @include flex();
                 padding: 0.45rem;
-                height: 100%;
 
                 :hover{
                     color: #0282f9;
                     border-bottom:#0282f9 solid 2px;
                 }
             }
+        }
+
+        div.banner{
+            @include container;
+            color:$textWhite;
+            padding: 3rem;
+            font-size: small;
+            
         }
     }
 </style>
