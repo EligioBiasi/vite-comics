@@ -14,10 +14,12 @@
                 </div>
             </nav>
         </div>
+        <div class="jumbotron">
+        </div>
         <div>
             <div class="banner">
                 <h1>
-                -- Content goes here --
+                    
                 </h1>
             </div>
         </div>
@@ -117,5 +119,13 @@ export default {
             font-size: small;
             
         }
+    }
+
+    div.jumbotron{
+        background-image: url('../assets/img/jumbotron.jpg');
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: 300px;
     }
 </style>

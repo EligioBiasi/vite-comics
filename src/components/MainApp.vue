@@ -201,6 +201,6 @@ export default {
         position: absolute;
         right: 15%;
         top:-20%;
-        width: 35%;
+        width: 25%;
     }
 </style>
