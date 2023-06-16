@@ -1,10 +1,10 @@
 <template>
      <article>
         <div class="picture">
-            <img :src="ComicElement.thumb" alt="#">
+            <img :src="ComicImage" alt="#">
         </div>
         <p class="cooking-time">
-            {{ComicElement.series}}
+            {{ComicTitle}}
         </p>
     </article>
 </template>
@@ -12,7 +12,8 @@
 
 export default {
     props:{
-        ComicElement: Object
+        ComicImage: String,
+        ComicTitle: String,
     }
 }
 </script>
