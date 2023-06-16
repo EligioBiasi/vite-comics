@@ -16,12 +16,11 @@
         </div>
         <div class="jumbotron">
         </div>
-        <div>
-            <div class="banner">
-                <ImageCard v-for="Comic in ComicsForCard"
-                :ComicImage="Comic.thumb"
-                :ComicTitle="Comic.series"/>
-            </div>
+
+        <div class="banner">
+            <ImageCard v-for="Comic in ComicsForCard"
+            :ComicImage="Comic.thumb"
+            :ComicTitle="Comic.series"/>
         </div>
     </header>
 </template>
@@ -30,12 +29,11 @@
 import ImageCard from './ImageCard.vue'
 export default {
     name: 'HeaderApp',
-    
-    data(){
-        return{
-            components:{
+    components:{
                 ImageCard,
             },
+    data(){
+        return{
             NavContainerLinks:[
                 {
                     text: 'characters',
@@ -191,6 +189,8 @@ export default {
         }
 
         div.banner{
+            display: flex;
+            flex-wrap:wrap;
             @include container;
             color:$textWhite;
             padding: 3rem 0;

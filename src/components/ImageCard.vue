@@ -1,9 +1,9 @@
 <template>
      <article>
-        <div class="picture">
-            <img :src="ComicImage" alt="#">
+        <div class="card">
+            <img :src="ComicImage" alt="ComicTitle">
         </div>
-        <p class="cooking-time">
+        <p>
             {{ComicTitle}}
         </p>
     </article>
@@ -20,9 +20,13 @@ export default {
 <style lang="scss" scoped>
     article{
         width: calc((100% / 6));
-
-        img{
+        div.card{
             width: 100%;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 250px;
         }
     }
 </style>
